@@ -1,4 +1,5 @@
-data/* 
+data/*
+templates/* 
 Sparkify.pem 
 .DS_Store
 spark_churn_detection_env/*
