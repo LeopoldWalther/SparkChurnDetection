@@ -63,6 +63,15 @@ SparkBigData_ChurnDetection/
 The main findings of the code can be found at the post available
 [here](https://leopoldwalther.medium.com/predicting-user-churn-for-a-streaming-service-using-spark-6ef7379c7963).
 
+In this project I analyze user interactions of a streaming service using Spark. After understanding the business importance of churn, I explore a small subset of data to get a comprehension of the data and its quality. Then, I clean the data from missing values and create features which allow a machine learning model to find differences in the behaviour of users who stay with the service versus those who churn. With the prepared data I train different classifiers and evaluated their performance with a suitable metric for imbalanced data. The result of the project is a Gradient-Boosted Tree Classifier which can identify users who will churn with high precision and high recall:
+
++--------------+---------------+
+|Metric        | Gradient Boost|
++--------------+---------------+
+|F1-score      | 71%           |
+|Area under ROC| 58%           |
++--------------+---------------+
+
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
 I give credit to Udacity for the data (user_log).
